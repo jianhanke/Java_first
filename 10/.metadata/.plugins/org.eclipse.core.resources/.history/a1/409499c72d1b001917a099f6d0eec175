@@ -1,0 +1,13 @@
+
+public class Ceshi {
+	public static void main(String[] args) {
+		new Ceshi.show();
+	}
+	public void show() {
+		while(true) {
+			System.out.println("≤‚ ‘÷–£¨");
+		}
+	}
+	
+	
+}

@@ -1,0 +1,62 @@
+import java.awt.BorderLayout;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.net.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class GuiChat extends JFrame{
+	private static final int DEFAULT_PORT=8899;
+	private JLabel stateLB;
+	private JTextArea centerTextArea;
+	private JPanel southPanel;
+	private JTextArea inputTextArea;
+	private JPanel bottomPanel;
+	private JTextField ipTextField;
+	private TextField remotePortTF;
+	private JButton sendBT;
+	private JButton clearBT;
+	private DatagramSocket datagramSocket;
+	
+	private void setUpUI() {
+		setTitle("GUI聊天");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400,400);
+		setResizable(false);
+		setLocationRelativeTo(null);
+		stateLB=new JLabel("当前还未监听");
+		stateLB.setHorizontalAlignment(JLabel.RIGHT);
+		
+		centerTextArea=new JTextArea();
+		 ipTextField = new JTextField("127.0.0.1",8);
+		 remotePortTF=new TextField(String.valueOf(DEFAULT_PORT),3);
+		 sendBT=new JButton("发送");
+		 clearBT=new JButton("清屏");
+		 bottomPanel.add(ipTextField);
+		 bottomPanel.add(remotePortTF);
+		 bottomPanel.add(sendBT);
+		 bottomPanel.add(clearBT);
+		 southPanel.add(new JScrollPane(inputTextArea),BorderLayout.CENTER);
+		 southPanel.add(bottomPanel,BorderLayout.SOUTH);
+		 add(stateLB,BorderLayout.NORTH);
+		 add(new JScrollPane(centerTextArea),BorderLayout.CENTER);
+		 add(southPanel,BorderLayout.SOUTH);
+		 setVisible(true);	
+	}
+	
+	private void setListener() {
+		sendBT.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				final String ipAddress=ipTextField.getText();
+				final String remotePort=remotePortTF.getText();
+			}
+		});
+	}
+
+}

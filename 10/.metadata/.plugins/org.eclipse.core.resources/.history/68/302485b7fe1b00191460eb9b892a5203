@@ -1,0 +1,33 @@
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Ceshi {
+	
+	public static void main(String[] args) {
+		Gui gui=new Gui();
+		
+	}
+	
+}
+class Gui extends JFrame{
+	
+	public void creat() {
+		setSize(500,500);
+		setLocationRelativeTo(null);
+		setTitle("≤‚ ‘");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+		
+	JTextField chat_jtf=new JTextField(20);
+	JPanel chat_jp=new JPanel();
+	JLabel chat_jl=new JLabel("≤‚ ‘");
+	chat_jp.add(chat_jtf);
+	chat_jp.add(chat_jl);
+	this.add(chat_jp);
+
+	}
+}

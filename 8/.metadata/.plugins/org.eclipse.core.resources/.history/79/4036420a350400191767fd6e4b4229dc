@@ -1,0 +1,16 @@
+import java.io.UnsupportedEncodingException;
+import java.util.*;
+public class Example33 {
+
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		String str="´«ÖÇ";
+		byte[] b =str.getBytes("GBK");
+		String temp=new String(b,"Unicode");
+		System.out.println(temp);
+		byte[] b1=temp.getBytes("Unicode");
+		String result=new String(b1,"GBK");
+		System.out.println(result);
+
+	}
+
+}

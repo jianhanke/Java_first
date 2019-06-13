@@ -1,0 +1,17 @@
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Ceshi {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}
+class Gui extends JFrame{
+	setSize(500,500)
+	
+	JTextField chat_jtf=new JTextField();
+	JPanel chat_jp=new JPanel();
+}

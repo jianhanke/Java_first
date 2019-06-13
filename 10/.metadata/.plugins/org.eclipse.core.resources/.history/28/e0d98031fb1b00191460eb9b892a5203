@@ -1,0 +1,10 @@
+public class Ceshi {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}
+class Gui extends JFrame{
+	
+}

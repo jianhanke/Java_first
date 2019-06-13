@@ -1,0 +1,13 @@
+import java.util.*;
+public class Example33 {
+
+	public static void main(String[] args) {
+		String str="´«ÖÇ";
+		byte[] b =str.getBytes("GBK");
+		String temp=new String(b,"ISO8859-1");
+		System.out.println(temp);
+		String result=temp.getBytes("ISO8859-1");
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package number;
+
+import java.util.Random;
+
+public class number {
+	
+	public void num() {
+		int num=new Random().nextInt(1000);
+		
+		
+		System.out.println("ÇëÊäÈëÊı×Ö");
+		
+		int cnt=10;
+		Scanner  in=new Scanner(System.in)
+		
+	}
+	
+}

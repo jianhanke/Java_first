@@ -1,0 +1,13 @@
+import java.io.*;
+import java.net.*;
+public class Example06 {
+	public static void main(String[] args) {
+		new TCPServer().listen();
+	}
+}
+class TCPServer{
+	private void listen() throws Exception{
+		ServerSocket serverSocket=new ServerSocket(PORT);
+		
+	}
+}

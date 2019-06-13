@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;biz.Cancel.cancel().in&apos; in &apos;biz.Cancel.cancel()&apos; to field&#x0D;&#x0A;- Original project: &apos;entity&apos;&#x0D;&#x0A;- Original element: &apos;biz.Cancel.cancel().in&apos;&#x0D;&#x0A;- Field name: &apos;in&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;in&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/&lt;biz{Cancel.java" name="in" selection="314 27" stamp="1546517571618" static="true" version="1.0" visibility="2"/>
+</session>

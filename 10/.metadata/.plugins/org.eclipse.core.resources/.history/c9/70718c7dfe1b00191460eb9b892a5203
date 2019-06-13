@@ -1,0 +1,33 @@
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Ceshi {
+	
+	public static void main(String[] args) {
+		new Gui().creat();
+	}
+	
+}
+class Gui extends JFrame{
+	
+	public void creat() {
+		this.setLayout(new FlowLayout(FlowLayout.CENTER,300,20) );
+		this.setSize(600,600);
+		this.setLocation(600,260);
+		this.setTitle("学生选课界面");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+		
+	JTextField chat_jtf=new JTextField(20);
+	JPanel chat_jp=new JPanel();
+	JLabel chat_jl=new JLabel("测试");
+	chat_jp.add(chat_jtf);
+	chat_jp.add(chat_jl);
+	this.add(chat_jp);
+
+	}
+}

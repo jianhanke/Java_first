@@ -1,0 +1,11 @@
+import java.io.*;
+import java.net.*;
+public class Example07 {
+	public static void main(String[] args) throws Exception {
+		ServerSocket serversocket=new ServerSocket(1001);
+		while(true) {
+			Socket s=serversocket.accept();
+			new Thread(new ServerThread(s).start);
+		}
+	}
+}

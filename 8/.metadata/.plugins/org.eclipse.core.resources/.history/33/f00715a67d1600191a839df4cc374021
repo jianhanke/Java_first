@@ -1,0 +1,10 @@
+package number;
+
+public class caishu {
+
+	public static void main(String[] args) {
+		Caishu c=new Caishu();
+
+	}
+
+}

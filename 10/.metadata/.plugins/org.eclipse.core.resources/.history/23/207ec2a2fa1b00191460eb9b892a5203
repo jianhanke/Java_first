@@ -1,0 +1,21 @@
+
+public class Ceshi {
+	public static void main(String[] args) {
+		show();
+		
+		System.out.println("不知道是否回到此处");
+		show2();
+	}
+	public static  void show() {
+		while(true) {
+			System.out.println("测试中，");
+		}
+	}
+	public static void show2() {
+		while(true) {
+			System.out.println("测试中22，");
+		}
+	}
+	
+	
+}
